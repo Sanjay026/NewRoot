@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eaeaea"
+    tools:context="com.vijay.newroot.PostActivity">
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        tools:layout="@layout/place_autocomplete_fragment" />
+
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eaeaea"
+                android:id="@+id/linearpost1"
+                android:scrollbars="vertical"
+                android:orientation="vertical"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:textSize="18dp"
+                    android:paddingTop="15dp"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="15dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Description"
+                    android:gravity="top"
+                    android:maxHeight="300dp"
+                    android:scrollbars="vertical"
+                    android:textColor="#000"
+                    android:id="@+id/descField"
+                    />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/imageSelect2"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_below="@+id/descField"
+                />
+            </RelativeLayout>
+       </ScrollView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/linearLayout">
+    <Spinner
+        android:id="@+id/titleField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:entries="@array/Category_arrays"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:padding="5dp">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageSelect"
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_location_black_24dp"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Add Location"
+                android:textColor="#000"
+                android:layout_margin="10dp"
+                android:id="@+id/locationField"
+                android:clickable="true"
+                />
+        </LinearLayout>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.3"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/submitBtn"
+            android:background="#E65100"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#000"
+    tools:context="com.vijay.newroot.FullProfile">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp1"
+            android:background="@android:color/transparent"
+            android:id="@+id/backpencil"
+            android:padding="@dimen/activity_horizontal_margin"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Photo"
+            android:padding="20dp"
+            android:textSize="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+       <ImageButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/edit"
+           android:id="@+id/pencil"
+           android:padding="@dimen/activity_horizontal_margin"
+           android:background="@android:color/transparent"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+    </LinearLayout>
+    <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="0.6"
+       android:src="@drawable/userr"
+        android:id="@+id/imagepencil"
+       />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.03"
+        android:id="@+id/progressBarpencil"
+        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"></LinearLayout>
+</LinearLayout>

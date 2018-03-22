@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.vijay.newroot.BlogSingleActivity"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+    <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.4"
+           android:id="@+id/frame1">
+
+        <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/singleBlogImage"
+               android:src="@drawable/whiteload"
+               android:adjustViewBounds="true"
+               android:fitsSystemWindows="true"
+               app:layout_collapseMode="parallax"
+
+            />
+           <ImageButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/blogsingleimagebutton"
+               android:src="@drawable/ic_keyboard_backspace_black_24dp1"
+               android:padding="@dimen/activity_horizontal_margin"
+               android:background="@android:color/transparent"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/singleBlogTitle"
+               android:text="Blog Title Goes Here"
+               android:padding="20dp"
+               android:layout_gravity="bottom"
+               android:textColor="#fff"
+               android:textSize="25dp"
+               android:textStyle="bold"
+               android:background="#7e5650ad" />
+
+           <ProgressBar
+               style="?android:attr/progressBarStyleLarge"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/progressBarblogsingle"
+               android:layout_gravity="center" />
+
+
+       </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            android:layout_weight="0.45"
+            android:id="@+id/singleBlogDesc"
+            android:text="Blog Des Goes Here"
+            android:textColor="#757575"
+            android:textStyle="normal"
+            android:background="#fff"
+            android:padding="15dp"
+            android:textSize="18dp"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.03"></LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:paddingRight="35dp"
+        android:paddingLeft="35dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:background="#E65100"
+        android:textColor="@color/trans"
+        android:id="@+id/singleRemoveBtn"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05">
+
+    </LinearLayout>
+
+
+</LinearLayout>

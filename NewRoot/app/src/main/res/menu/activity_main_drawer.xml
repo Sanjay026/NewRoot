@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:title="Account"/>
+    <group android:checkableBehavior="single" android:id="@+id/groupone">
+    <item android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="Change Password"
+        android:orderInCategory="1"
+        >
+    </item>
+    <item android:id="@+id/nav_photos"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="My Photos"
+        android:orderInCategory="1"
+        >
+    </item>
+
+        </group>
+
+
+    <group>
+    <item android:id="@+id/nav_about"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="About"
+        android:orderInCategory="3"
+        >
+    </item>
+    <item android:id="@+id/nav_help"
+        android:icon="@drawable/ic_help_black_24dp"
+        android:title="Help"
+        android:orderInCategory="4"
+        >
+
+    </item>
+    <item android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"
+        android:title="Logout"
+        android:orderInCategory="4"
+        >
+    </item>
+        <item android:id="@+id/nav_invite"
+            android:icon="@drawable/ic_share_black_24dp"
+            android:title="Share"
+            android:orderInCategory="4"
+            >
+        </item>
+    </group>
+</menu>

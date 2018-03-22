@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NewRoot</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="google_place_api">AIzaSyD1AcQZ5ZVCzcjj2zUPj8qpW8tX7xNcUcQ</string>
+    <string name="list">Choose a Category</string>
+    <string name="invitation_deep_link">"https://wux62.app.goo.gl/ToRoots"</string>
+
+    <string-array name="Category_arrays">
+        <item>Nature</item>
+        <item>Food</item>
+        <item>Culture</item>
+        <item>Heritage</item>
+
+    </string-array>
+</resources>
